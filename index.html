@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="images/my logo.png" class="logo" alt="Logo" />
+
+        <div class="menu-icon" onclick="toggleMenu(this)"><i class="fa-solid fa-list"></i></div>
+
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      
+      </nav>
+      <div class="header-text">
+        <p>Front end Web Developer</p>
+        <h1>Hi, I'm <span>Joseph </span><br> Otugbo from Nigeria</h1>
+      </div>
+    </div>
+
+    <div class="me">
+      <img src="images/joseph 1.jpg" class="me-4" alt="Me" >
+  </div>
+
+  <!-----About----->
+  <div id="about">
+    <div class="row">
+      <div class="about-col-1">
+        <img src="images/my picture.jpg" alt="my picture">
+      </div>
+      <div class="about-col-2">
+        <h1 class="sub-title">About Me</h1>
+        <p class="abt-p">
+    Hi, I'm <strong>Otugbo Joseph Edache</strong>, a junior web developer passionate about creating clean, responsive, and user-friendly websites. I love turning ideas into functional web experiences using HTML, CSS, and JavaScript.
+    I'm currently focused on sharpening my front-end development skills and enjoy learning new tools and techniques. I work with technologies like React, Tailwind CSS, and Git, and I’m always exploring better ways to build and design for the web.
+    Outside of coding, I enjoy <strong>teaching, counseling, video editing, learning Mandarin, graphic designing, watching code tutorials</strong>, and <strong>exploring web trends</strong>. I'm excited to grow in the tech world and contribute to meaningful projects.
+  </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Development</span><br>Web App Development</li>
+              <li><span>Video Editing</span><br>Content creating</li>
+              <li><span>Graphic Design</span><br>Professional Creative Designs</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2025 - current</span><br>Using HTML, CSS, and basic JavaScript to clone YouTube, build a calculator and quiz app, design a real estate website, and create a personal brand logo.</li>
+              <li><span>2025 - current</span><br>Editing and enhancing videos to create engaging, high-quality visual content.</li>
+              <li><span>2025 - current</span><br>Crafting stunning visual designs that captivate audiences and elevate brand presence.</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022</span><br>Teachers Registration Council of Nigeria</li>
+              <li><span>2023</span><br>B.Ed. Educational Admin & Planning(CRUTECH)</li>
+              <li><span>2025</span><br>Marcconnect Technologies/ Dev forge Bootcamp</li>
+              <li><span>2025</span><br>Online Courses & Materials</li>
+              <li><span>2025</span><br>Online Courses & Materials</li>
+            </ul>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <button id="back-to-top"><i class="fa-solid fa-arrow-up"></i></button>
+
+
+
+
+  <!------services------>
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>I design clean, responsive websites that work on any device.
+              Using HTML, CSS, and JavaScript, I turn ideas into smooth user experiences.
+              From landing pages to portfolio sites, I bring your vision to life.
+              Let’s build something modern, fast, and truly impressive together.</p>
+              <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-video-slash"></i>
+          <h2>Video Editing</h2>
+          <p>I craft engaging, high quality videos that tell your story with impact.
+            From cuts to effects, I edit with style, flow, and purpose.
+            Whether it's YouTube, promos, or reels. I bring your vision to life.
+            Let’s turn your raw footage into content that grabs attention and delivers results.</p>
+            <a href="#">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-palette"></i>
+          <h2>Graphic Design</h2>
+          <p>I create bold, eye catching designs that make your brand stand out.
+              From logos to flyers, every detail is crafted with purpose and style.
+              I turn ideas into visuals that speak clearly and look amazing.
+              Let’s design something that captures attention and leaves a lasting impression.</p>
+              <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- ---------- Portfolio ---------- -->
+<div id="portfolio">
+  <div class="container">
+    <h1 class="sub-title">My work</h1>
+    <div class="work-list">
+
+      <!-- Work 1: Website -->
+      <div class="work">
+        <video class="estate-video" controls>
+          <source src="videos/Estate Website.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <h3>Estate Website</h3>
+          <p>The site was built for Grace Residence — an affordable estate where elites dwell. Visit: www.graceresidence.ng</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <!-- Work 2: Video Editing -->
+      <div class="work">
+        <video class="intro-video" controls>
+          <source src="videos/INTRODUCTION.mp4" type="video/mp4">
+        </video>
+        <div class="layer">
+          <h3>Video Editing</h3>
+          <p>I create compelling videos and offer general video editing services.</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+      <!-- Work 3: Graphic Design -->
+      <div class="work">
+        <img src="images/my design again.jpg" alt="My Design">
+        <div class="layer">
+          <h3>Graphic Design</h3>
+          <p>Even little ideas in the hands of an expert lead to jaw-dropping results. Let us bring your imagination to light.</p>
+          <a href="#"><i class="fa-solid fa-link"></i></a>
+        </div>
+      </div>
+
+    </div>
+    <a href="#" class="btn">See more</a>
+  </div>
+</div>
+
+<!-----------contact------------>
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p> <i class="fa-solid fa-paper-plane"></i>otugboedache@gmail.com</p>
+        <p> <i class="fa-solid fa-phone"></i>+2348039936426</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=61571458095945"><i class="fa-brands fa-facebook"></i></a>
+         <a href="https://www.linkedin.com/in/joseph-otugbo-658935317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://joe-26eda.github.io/portfolio/"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.instagram.com/otugbojosephedache?igsh=YzljYTk1ODg3Zg=="><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <a href="images/RESUME (1).pdf" download class="btn btn2">Download CV</a>
+      </div>
+      <div class="contact-right">
+        <form name="submit-to-google-sheet">
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="Email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+        
+        <span id="msg">Hello</span>
+
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2025 IncreaseDev. All rights reserved. <i class="fa-solid fa-award"></i></p>
+
+  </div>
+</div>
+
+
+
+<script>
+  var tablinks = document.getElementsByClassName("tab-links");
+  var tabcontents = document.getElementsByClassName("tab-contents");
+
+  function opentab(tabname) {
+    for (tablink of tablinks) {
+      tablink.classList.remove("active-link");
+    }
+
+    for (tabcontent of tabcontents) {
+      tabcontent.classList.remove("active-tab");
+    }
+
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+  }
+
+  // ✅ Back to top button script
+  const backToTopButton = document.getElementById('back-to-top');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  });
+
+  backToTopButton.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // ✅ Hamburger menu toggle function
+  function toggleMenu(iconElement) {
+    const navLinks = document.getElementById('navLinks');
+    const icon = iconElement.querySelector('i'); // get the <i> inside the menu-icon
+
+    navLinks.classList.toggle('show');
+
+    if (navLinks.classList.contains('show')) {
+      icon.classList.remove('fa-bars');
+      icon.classList.add('fa-times'); // change to X icon
+    } else {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars'); // back to hamburger
+    }
+  }
+</script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxj1rSwwiZySvbRsVDDGAdVgoscBA-v0qD4NVRp3PktgRiwDUMCwe1Yn8F7QigROP5YRw/exec';
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+        setTimeout(function(){
+          msg.innerHTML = ""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+
+</body>
+</html>
